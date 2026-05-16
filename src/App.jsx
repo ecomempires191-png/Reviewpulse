@@ -83,7 +83,7 @@ export default function ReviewPulseApp() {
     setAiLoading(true);
     setAiResponse("");
     try {
-      const res = await fetch("http://localhost:3001/api/reply", {
+      const res = await fetch("https://reviewpulse-h316.onrender.com/api/reply", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
